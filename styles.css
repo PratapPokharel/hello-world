@@ -1,0 +1,176 @@
+/* цвета временные, заменю, как только скачаю специальное приложение */
+
+.container{
+	display: grid;
+	grid-template-columns: 17% 80% 3%;
+	grid-template-rows: 40px 40% auto 10%;
+	grid-template-areas: 
+	"header search notifications"
+	"profile main main"
+	"sidebar main main"
+	"version main main";
+}
+
+.item-a{
+	grid-area: header;
+	color: rgb(250,251,253);
+}
+
+.item-b{
+	grid-area: search;
+	color: rgb(250,251,253);
+}
+
+.item-c{
+	grid-area: profile;
+	border-top: 1px solid grey;
+	background-color: rgb(246 247 251);
+}
+
+.item-d{
+	grid-area: sidebar;
+	border-top: 1px solid grey;
+	color: rgb(250,251,253);
+}
+
+.item-e{
+	grid-area: version;
+	border-top: 1px solid grey;
+	color: rgb(250,251,253);
+}
+
+.item-f{
+	grid-area: main;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	background-color: rgb(246 247 251);
+}
+
+.item-g{
+	grid-area: notifications;
+	
+}
+
+.subitem-f{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"f1 f2 f3"
+	"f4 f5 f6";
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	overflow: scroll;
+}
+
+.subitem-f1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	grid-area: f1;
+	background-color: white;
+    width: 280px;
+    height: 280px;
+}
+
+.subitem-f2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	border-radius: 10px;
+    grid-area: f2;
+    background-color: white;
+    width: 280px;
+    height: 280px;
+}
+
+.subitem-f3{
+	display: grid;
+	grid-area: f3;
+	background-color: white;
+	width: 280px;
+	height: 280px;
+}
+
+.subitem-f4{
+	display: grid;
+	grid-area: f4;
+	background-color: white;
+	width: 280px;
+	height: 280px;
+}
+
+.subitem-f5{
+	display: grid;
+	grid-area: f5;
+	background-color: white;
+	width: 280px;
+	height: 280px;
+}
+
+.subitem-f6{
+	display: grid;
+	grid-area: f6;
+	background-color: white;
+	width: 280px;
+	height: 280px;
+}
+
+.bold:{
+
+}
+
+.bold:hover{
+	cursor: pointer;
+	border-radius: 1em;
+	padding: 8px;
+	background-color: #3A28E1;
+	color: white;
+	width: 150px;
+}
+
+.sidebar-notifications{
+	display: inline-block;
+	color: white; 
+	background-color: #ED3E3E;
+	border-radius: 1em;
+	width: 25px;
+	padding-left: 8px; 
+	margin-left: 4px;
+}
+
+.main_notifications{
+	display: inline-block;
+	color: white;
+	background-color: #3A28E1;
+	border-radius:1em;
+	width: 27px;
+	padding-left: 10px; 
+	margin-left: 4px;
+}
+
+.main_headers{
+	font-size: 150%;
+}
+
+.subitem_person{
+	grid-area: person;
+	border-bottom: 1px solid grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.subitem_confirm{
+	grid-area: confirm;
+}
+
+.subitem_decline{
+	grid-area: decline;
+	border-left: 1px solid grey;
+}
