@@ -13,12 +13,12 @@
 
 .item-a{
 	grid-area: header;
-	color: rgb(250,251,253);
+	backgorund-color: rgb(250,251,253);
 }
 
 .item-b{
 	grid-area: search;
-	color: rgb(250,251,253);
+	background-color: rgb(250,251,253);
 }
 
 .item-c{
@@ -30,13 +30,13 @@
 .item-d{
 	grid-area: sidebar;
 	border-top: 1px solid grey;
-	color: rgb(250,251,253);
+	background-color: rgb(250,251,253);
 }
 
 .item-e{
 	grid-area: version;
 	border-top: 1px solid grey;
-	color: rgb(250,251,253);
+	background-color: rgb(250,251,253);
 }
 
 .item-f{
