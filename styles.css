@@ -1,5 +1,4 @@
 
-
 .container{
 	display: grid;
 	grid-template-columns: 17% 80% 3%;
@@ -9,45 +8,50 @@
 	"profile main main"
 	"sidebar main main"
 	"version main main";
+	font-family: Verdana;
 }
 
 .item-a{
 	grid-area: header;
-	backgorund-color: rgb(250,251,253);
+	background-color: rgb(250, 251, 253);
 }
 
 .item-b{
 	grid-area: search;
-	background-color: rgb(250,251,253);
+	background-color: rgb(250, 251, 253);
 }
 
 .item-c{
 	grid-area: profile;
-	border-top: 1px solid grey;
-	background-color: rgb(246 247 251);
+	border-top: 2px solid rgb(241, 242, 245);
+	background-color: rgb(246, 247, 251);
+	text-align: center;
 }
 
 .item-d{
 	grid-area: sidebar;
-	border-top: 1px solid grey;
-	background-color: rgb(250,251,253);
+	border-top: 2px solid rgb(241, 242, 245);
+	background-color: rgb(250, 251, 253);
+	text-align: left;
 }
 
 .item-e{
 	grid-area: version;
-	border-top: 1px solid grey;
-	background-color: rgb(250,251,253);
+	border-top: 2px solid rgb(241, 242, 245);
+	background-color: rgb(250, 251, 253);
 }
 
 .item-f{
+	padding-left: 60px;
 	grid-area: main;
-	border-left: 1px solid grey;
-	border-top: 1px solid grey;
-	background-color: rgb(246 247 251);
+	border-left: 2px solid rgb(241, 242, 245);
+	border-top: 2px solid rgb(241, 242, 245);
+	background-color: rgb(246, 247, 251);
 }
 
 .item-g{
 	grid-area: notifications;
+	background-color: rgb(246, 247, 251);
 	
 }
 
@@ -70,6 +74,7 @@
 	grid-template-areas: 
 	"person person"
 	"confirm decline";
+	border-radius: 10px;
 	grid-area: f1;
 	background-color: white;
     width: 280px;
@@ -92,6 +97,12 @@
 
 .subitem-f3{
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	border-radius: 10px;
 	grid-area: f3;
 	background-color: white;
 	width: 280px;
@@ -100,6 +111,12 @@
 
 .subitem-f4{
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	border-radius: 10px;
 	grid-area: f4;
 	background-color: white;
 	width: 280px;
@@ -108,6 +125,12 @@
 
 .subitem-f5{
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	border-radius: 10px;
 	grid-area: f5;
 	background-color: white;
 	width: 280px;
@@ -116,29 +139,48 @@
 
 .subitem-f6{
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: 
+	"person person"
+	"confirm decline";
+	border-radius: 10px;
 	grid-area: f6;
 	background-color: white;
 	width: 280px;
 	height: 280px;
 }
 
-.bold:{
-
+.bold{
+	border-radius: 1em;
+	background-color: rgb(250,251,253);
+	padding: 8px;
+	font-weight: 700;
+	margin-left: 30px;
 }
 
 .bold:hover{
 	cursor: pointer;
 	border-radius: 1em;
-	padding: 8px;
-	background-color: #3A28E1;
+	background-color: rgb(60, 53, 221);
+	margin-left: 37px;
 	color: white;
 	width: 150px;
+	padding: 8px;
 }
+
+/*.bold:focus{
+	border-radius: 1em;
+	padding: 8px;
+	background-color: rgb(60, 53, 221);
+	color: white;
+	width: 150px;
+}*/
 
 .sidebar-notifications{
 	display: inline-block;
 	color: white; 
-	background-color: #ED3E3E;
+	background-color: rgb(249,84,114);
 	border-radius: 1em;
 	width: 25px;
 	padding-left: 8px; 
@@ -148,7 +190,7 @@
 .main_notifications{
 	display: inline-block;
 	color: white;
-	background-color: #3A28E1;
+	background-color: rgb(60, 53, 221);
 	border-radius:1em;
 	width: 27px;
 	padding-left: 10px; 
@@ -159,18 +201,47 @@
 	font-size: 150%;
 }
 
+.main_underline{
+	border-radius: 1px;
+	background-color: rgb(79, 96, 251);
+	width: 100px;
+
+}
+
 .subitem_person{
 	grid-area: person;
-	border-bottom: 1px solid grey;
-	margin-left: auto;
-	margin-right: auto;
+	border-bottom: 2px solid rgb(241, 242, 245);
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
 }
 
 .subitem_confirm{
 	grid-area: confirm;
+	text-align: center;
+	color: rgb(94, 108, 251);
+	padding-top: auto;
+	padding-bottom: auto;
 }
 
 .subitem_decline{
 	grid-area: decline;
-	border-left: 1px solid grey;
+	text-align: center;
+	border-left: 2px solid rgb(241, 242, 245);
+}
+
+.font_bold{
+	font-weight: 700;
+}
+
+.person_name{
+	font-weight: 700;
+}
+
+.subitem_confirm:hover{
+	cursor: pointer;
+}
+
+.subitem_decline:hover{
+	cursor: pointer;
 }
