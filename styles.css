@@ -1,14 +1,14 @@
-
 .container{
 	display: grid;
 	grid-template-columns: 17% 80% 3%;
-	grid-template-rows: 40px 40% auto 10%;
+	grid-template-rows: 40px 180px auto 50px;
 	grid-template-areas: 
 	"header search notifications"
 	"profile main main"
 	"sidebar main main"
 	"version main main";
-	font-family: Verdana;
+	font-family: Arial;
+	font-size: 75%;
 }
 
 .item-a{
@@ -39,6 +39,7 @@
 	grid-area: version;
 	border-top: 2px solid rgb(241, 242, 245);
 	background-color: rgb(250, 251, 253);
+	padding-left: 34px;
 }
 
 .item-f{
@@ -56,13 +57,14 @@
 }
 
 .subitem-f{
+	margin-top: 24px;
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: 
 	"f1 f2 f3"
 	"f4 f5 f6";
-	grid-column-gap: 20px;
+	grid-column-gap: 0px;
 	grid-row-gap: 20px;
 	overflow: scroll;
 }
@@ -79,6 +81,7 @@
 	background-color: white;
     width: 280px;
     height: 280px;
+    border: 2px solid rgb(241, 242, 245);
 }
 
 .subitem-f2{
@@ -93,6 +96,7 @@
     background-color: white;
     width: 280px;
     height: 280px;
+    border: 2px solid rgb(241, 242, 245);
 }
 
 .subitem-f3{
@@ -107,6 +111,7 @@
 	background-color: white;
 	width: 280px;
 	height: 280px;
+	border: 2px solid rgb(241, 242, 245);
 }
 
 .subitem-f4{
@@ -121,6 +126,7 @@
 	background-color: white;
 	width: 280px;
 	height: 280px;
+	border: 2px solid rgb(241, 242, 245);
 }
 
 .subitem-f5{
@@ -135,6 +141,7 @@
 	background-color: white;
 	width: 280px;
 	height: 280px;
+	border: 2px solid rgb(241, 242, 245);
 }
 
 .subitem-f6{
@@ -149,6 +156,7 @@
 	background-color: white;
 	width: 280px;
 	height: 280px;
+	border: 2px solid rgb(241, 242, 245);
 }
 
 .bold{
@@ -182,7 +190,7 @@
 	color: white; 
 	background-color: rgb(249,84,114);
 	border-radius: 1em;
-	width: 25px;
+	width: 23px;
 	padding-left: 8px; 
 	margin-left: 4px;
 }
@@ -191,21 +199,44 @@
 	display: inline-block;
 	color: white;
 	background-color: rgb(60, 53, 221);
-	border-radius:1em;
+	border-radius: 1em;
 	width: 27px;
+	height: 14px;
 	padding-left: 10px; 
 	margin-left: 4px;
+	font-size: 50%;
+	padding-top: 5px;
 }
 
 .main_headers{
-	font-size: 150%;
+	font-size: 240%;
+	display: inline-block;
 }
 
 .main_underline{
-	border-radius: 1px;
+	border-radius: 1em;
 	background-color: rgb(79, 96, 251);
-	width: 100px;
+	width: 45px;
+	height: 4px;
+	color: rgb(246, 247, 251);
 
+}
+
+.main_switch{
+	background-color: rgb(234,239, 245);
+	display: inline-block;
+	border-radius: 2em;
+	width: 140px;
+	margin-left: 569px;
+}
+
+.main_switch:hover{
+	cursor: pointer;
+}
+
+.main_switch p{
+	display: inline-block;
+	text-align: center;
 }
 
 .subitem_person{
@@ -244,4 +275,20 @@
 
 .subitem_decline:hover{
 	cursor: pointer;
+}
+
+#box{
+	margin-left: 60px;
+	width: 300px;
+	height: 30px;
+	color: rgb(109, 109, 111);
+	background-color: rgb(250, 251, 253);
+	border: none;
+	font-size: 120%;
+}
+
+.image{
+	margin-top: 40px;
+	height: 80px;
+	-webkit-border-radius: 100px;
 }
