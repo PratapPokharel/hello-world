@@ -3,6 +3,7 @@ html, body{
 	margin:0;
 }
 
+
 .container{
 	display: grid;
 	grid-template-columns: 17% 80% 3%;
@@ -39,7 +40,9 @@ html, body{
 	vertical-align: middle;
 	padding-top: 14px;
 }
-
+input:focus{
+	outline: none;
+}
 .search{
 	grid-area: search;
 	background-color: rgb(250, 251, 253);
@@ -177,7 +180,7 @@ input::placeholder{
 }
 
 .patients{
-	height: 520px;
+	height: 80%;
 	overflow: scroll;
 	margin-left: -7px;
 	margin-top: 24px;
@@ -192,7 +195,6 @@ input::placeholder{
 	scrollbar-face-color: (145, 155, 255);
 }
 
-}
 .patient_1{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
