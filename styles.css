@@ -195,6 +195,10 @@ input::placeholder{
 	scrollbar-face-color: (145, 155, 255);
 }
 
+.correct_patients{
+	margin-top: -18px;
+}
+
 .patient_1{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -466,4 +470,3 @@ p.font_bold + p{
 	height: 80px;
 	-webkit-border-radius: 100px;
 }
-
