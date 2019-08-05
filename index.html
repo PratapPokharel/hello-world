@@ -4,123 +4,144 @@
 	<meta charset="utf-8">
 	<title>Appointments</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
 <body>
 	<div class="container">
-		<div class="item-a"><img/>HealthyPal</div>
-		<div class="item-b">
-			<input type="text" placeholder="Search patient by username or email" id="box">
+		<div class="logotype"><img src="images/healthypal1.jpg">  <span>HealthyPal</span></div>
+		<div class="search">
+			<span class="icon"><i class="fa fa-search"></i></span>
+			<input type="text" placeholder="Search patient by username or email..." id="box" >
 		</div>
-		<div class="item-c">
-			<img class="image" src="images/cornelia_hart.jpg">
-			<p class="person_name">Cornelia Hart</p>
+		<div class="profile">
+			<img class="image_profile" src="images/cornelia_hart.jpg">
+			<p class="profile_name">Cornelia Hart</p>
 			<p class="general_info">Physician Nutrition Specialist</p>
 		</div>
-		<div class="item-d">
-			<div><p class="bold" >Dashboard</p></div>
-			<div><p class="bold" >Calendar</p></div>
-			<div><p class="bold" >Messages<span class="sidebar-notifications">18</span></p></div>
-			<div><p class="bold" >Appointments</p></div>
-			<div><p class="bold" >Setting</p></div>
+		<div class="sidebar">
+			<div class="sidebar_element">
+                        <span class="icon_sidebar"><i class="far fa-chart-line"></i></span>
+                        <p class="text_sidebar dashboard">Dashboard</p>
+                  </div>
+			<div class="sidebar_element">
+                        <span class="icon_sidebar"><i class="far fa-calendar"></i></span>
+                        <p class="text_sidebar calendar" >Calendar</p>
+                  </div>
+			<div class="sidebar_element">
+                        <span class="icon_sidebar"><i class="far fa-comment"></i></span>
+                        <p class="text_sidebar messages">Messages<span class="sidebar-notifications">18</span></p>
+                  </div>
+			<div class="sidebar_element">
+                        <span class="icon_sidebar"><i class="far fa-user-friends"></i></span>
+                        <p class="text_sidebar appointments" >Appointments</p>
+                  </div>
+			<div class="sidebar_element">
+                        <span class="icon_sidebar"><i class="far fa-cog"></i></span>
+                        <p class="text_sidebar setting">Setting</p>
+                  </div>
 		</div>
-		<div class="item-e">
-			<p class="general_info"> version 2.1</p>
+		<div class="version">
+			<p class="version_place"> version 2.1</p>
 		</div>
-		<div class="item-f">
+		<div class="main">
 			<p class="main_headers">Appointments <span class="main_notifications">16</span></p> 
-			<div class="main_switch"><p>Today</p> <p>Emergency</p></div>
+			<div class="main_switch"><p class="main_switch_today">Today</p> <p class="main_switch_emergency">Emergency</p></div>
 			<p>16th Tuesday</p>
-			<div class="main_underline">.</div>
-			<div class="subitem-f"> 
-            <div class="subitem-f1">
-            	<div class=subitem_person>
-            		<img class="image" src="images/elvis_presley.jpg">
-            		<p class="font_bold">Elvis Presley</p>
-    				<p>Date: <span class="font_bold">16 June-9:00 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-            <div class="subitem-f2">
-            	<div class=subitem_person>
-            		<img class="image" src="images/bob_ross.jpg">
-            		<p class="font_bold">Bob Ross</p>
-    				<p>Date: <span class="font_bold">16 June-9:30 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-            <div class="subitem-f3">
-            	<div class=subitem_person>
-            		<img class="image" src="images/fred_rogers.jpg">
-            		<p class="font_bold">Fred Rogers</p>
-    				<p>Date: <span class="font_bold">16 June-10:00 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-            <div class="subitem-f4">
-            	<div class=subitem_person>
-            		<img class="image" src="images/john_f_kennedy.jpg">
-            		<p class="font_bold">John F Kennedy</p>
-    				<p>Date: <span class="font_bold">16 June-11:00 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-            <div class="subitem-f5">
-            	<div class=subitem_person>
-            		<img class="image" src="images/marie_curie.jpg">
-            		<p class="font_bold">Marie Curie</p>
-    				<p>Date: <span class="font_bold">16 June-11:30 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-            <div class="subitem-f6">
-            	<div class=subitem_person>
-            		<img class="image" src="images/ingrid_bergman.jpg">
-            		<p class="font_bold">Ingrid Bergman</p>
-    				<p>Date: <span class="font_bold">16 June-12:00 am</span></p>
-            		<p>Practice: <span class="font_bold">Treatment</span></p>
-            	</div>
-            	<div class="subitem_confirm">
-            		<p>Confirm</p>
-            	</div>
-            	<div class="subitem_decline">
-            		<p>Decline</p>
-            	</div>
-            </div>
-          </div>
+			<div class="main_underline"></div>
+			<div class="patients_scroll"><div class="patients">
+                        <div class="patient_1">
+                        	<div class=subitem_person>
+                        		<img class="image_appointments" src="images/elvis_presley.jpg">
+                        		<p class="font_bold">Elvis Presley</p>
+                				<p>Date: <span class="font_bold">16 June-9:00 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                        <div class="patient_2">
+                        	<div class=subitem_person>
+                        		<div class="main_upper_notifications"></div>
+                        		<img class="image_appointments" src="images/bob_ross.jpg">
+                        		<p class="font_bold">Bob Ross</p>
+                				<p>Date: <span class="font_bold">16 June-9:30 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                        <div class="patient_3">
+                        	<div class=subitem_person>
+                        		<img class="image_appointments" src="images/fred_rogers.jpg">
+                        		<p class="font_bold">Fred Rogers</p>
+                				<p>Date: <span class="font_bold">16 June-10:00 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                        <div class="patient_4">
+                        	<div class=subitem_person>
+                        		<img class="image_appointments" src="images/john_f_kennedy.jpg">
+                        		<p class="font_bold">John F Kennedy</p>
+                				<p>Date: <span class="font_bold">16 June-11:00 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                        <div class="patient_5">
+                        	<div class=subitem_person>
+                        		<img class="image_appointments" src="images/marie_curie.jpg">
+                        		<p class="font_bold">Marie Curie</p>
+                				<p>Date: <span class="font_bold">16 June-11:30 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                        <div class="patient_6">
+                        	<div class=subitem_person>
+                        		<div class="main_upper_notifications"></div>
+                        		<img class="image_appointments" src="images/ingrid_bergman.jpg">
+                        		<p class="font_bold">Ingrid Bergman</p>
+                				<p>Date: <span class="font_bold">16 June-12:00 am</span></p>
+                        		<p>Practice: <span class="font_bold">Treatment</span></p>
+                        	</div>
+                        	<div class="subitem_confirm">
+                        		<p>Confirm</p>
+                        	</div>
+                        	<div class="subitem_decline">
+                        		<p>Decline</p>
+                        	</div>
+                        </div>
+                  </div></div>
 
 		</div>
-		<div class="item-g"></div>
+		<div class="notifications">
+                  <div class="upper_notifications"></div>
+                  <span class="angle_notifications"><i class="far fa-bell"></i></span>        
+            </div>
 	</div>
 </body>
 </html>
